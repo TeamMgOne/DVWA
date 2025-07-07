@@ -29,7 +29,7 @@ jobs:
       env:
           JF_URL: https://accenture2025.jfrog.io 
       with:
-          oidc-provider-name: evidence 
+          oidc-provider-name: aaron 
         
     - name: Verify CLI config
       run: jf evd create --predicate ./run_info.json --predicate-type https://in-toto.io/attestation/test-result/v0.1 --build-name dvwa-ci --build-number 14821954858 --key ./private.pem
